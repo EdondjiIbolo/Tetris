@@ -1,0 +1,85 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+#app{
+  border: 1px solid wheat;
+  border-radius: 4px;
+}
+.score-box{
+  display: flex;
+  gap:8px
+}
+.score-num{
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+button{
+  padding: 5px 10px;
+  text-transform: capitalize;
+  background-color: black;
+  border: #979797c4 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+button:hover{
+  transform: scale(1.05);
+}
+section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.modal{
+  display: grid;
+  place-content: center;
+  height: 100vh;
+
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: #000000d0;
+  
+}
+
+.modal >div{
+  border: 1px solid white;
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+  display: grid;
+  place-content: center;
+}
+.modal >div >p{
+  font-size: 2rem;
+  text-align: center;
+}
+.modal >div >button{
+  font-size: 1.5rem;
+  padding: 20px 25px;
+}
+.hidden{
+  display: none;
+}
