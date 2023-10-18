@@ -53,14 +53,14 @@ section{
 .modal{
   display: grid;
   place-content: center;
-  height: 100vh;
+  height: 100%;
 
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
 
-  background-color: #000000d0;
+  background-color: #000000ea;
   
 }
 
