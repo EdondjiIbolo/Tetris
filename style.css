@@ -20,10 +20,12 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
+  position: relative;
 }
 #app{
   border: 1px solid wheat;
   border-radius: 4px;
+  height: 500px;
 }
 .score-box{
   display: flex;
@@ -61,7 +63,7 @@ section{
   left: 0;
 
   background-color: #000000ea;
-  
+  margin-top: 0;
 }
 
 .modal >div{
